@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RubixFix</title>
+<style>/*{{CSS}}*/</style>
+</head>
+<body>
+<header><h1>RubixFix</h1><nav id="tabs"></nav></header>
+<main>
+  <section id="scan" hidden>
+    <p id="prompt" class="prompt"></p>
+    <div class="cam">
+      <video id="video" playsinline muted></video>
+      <div class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div id="camMsg" class="camMsg">Camera is off</div>
+    </div>
+    <div class="row">
+      <button id="btnCam">Start camera</button>
+      <button id="btnShot" class="primary" disabled>Capture face</button>
+      <label class="btn">Use a photo<input id="file" type="file" accept="image/*" capture="environment" hidden></label>
+    </div>
+    <div id="thumbs" class="thumbs"></div>
+    <p class="hint">Good light, no glare. Fill the grid with the face. Tap a thumbnail to retake that face.</p>
+  </section>
+
+  <section id="review" hidden>
+    <p class="prompt">Check the colours. Tap any sticker to change it (centres are fixed).</p>
+    <div id="reviewNet" class="net"></div>
+    <div id="counts" class="counts"></div>
+    <p id="reviewMsg" class="msg"></p>
+    <div class="row"><button id="btnRescan">Rescan</button><button id="btnSolve" class="primary">Solve</button></div>
+  </section>
+
+  <section id="solve" hidden>
+    <div id="stepHead" class="stepHead"></div>
+    <div id="stepBody"></div>
+    <div class="row"><button id="btnPrev">&larr; Back</button><button id="btnNext" class="primary">Next &rarr;</button></div>
+    <div id="chips" class="chips"></div>
+  </section>
+
+  <section id="busy" hidden><p class="prompt" id="busyMsg">Working…</p></section>
+</main>
+<script>/*{{CUBE}}*/</script>
+<script>/*{{SOLVE}}*/</script>
+<script>/*{{APP}}*/</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Copyright (c) 2026 brettl. All rights reserved.
+
+This source code is published for viewing and reference only. You may view it
+and clone or fork it on GitHub for personal study. You may not copy, modify,
+redistribute, sell, or use it (or any part of it) in your own projects without
+written permission from the copyright holder.
+
+Contributions are not accepted; pull requests will not be merged.
+
+Exception: the files in vendor/ are third-party software (cubejs by Petri
+Lehtinen) and remain under their own MIT license, see vendor/cubejs-LICENSE.txt.
+
+The software is provided "as is", without warranty of any kind.

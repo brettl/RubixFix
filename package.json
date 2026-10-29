@@ -1,0 +1,6 @@
+{
+  "name": "rubixfix",
+  "private": true,
+  "description": "Scan a Rubik's cube with the camera and get a step-by-step solution, built into one HTML page.",
+  "scripts": { "build": "node build.mjs", "test": "node test.mjs" }
+}
